@@ -1,0 +1,144 @@
+/* Global Styles */
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  color: #555; /* Dark gray text for better readability */
+  background: #f1f1f1; /* Soft light gray background */
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #5d6f6e, #789e9b); /* Muted greenish gradient */
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+  /*background-image: url('hero.jpg');*/ /* Add your image path here */
+  background-size: cover; /* Ensures the image covers the entire hero section */
+  background-position: center; /* Centers the image */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.btn-primary {
+  background: white;
+  color: #789e9b; /* Muted greenish color for button text */
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #789e9b; /* Muted greenish for titles */
+  text-align: center;
+}
+
+.section-description {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Services Section */
+.service-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.service-item {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* About Section */
+.about-content {
+  text-align: center;
+  line-height: 1.8;
+  margin-top: 20px;
+}
+
+/* Contact Section */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 600px;  /* Limit the form's width */
+  margin: 0 auto;  /* Center the form */
+}
+
+.contact-form label {
+  font-size: 1rem;
+  color: #4b4b4b;
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 100%;  /* Ensure inputs take full width within the form */
+}
+
+.contact-form textarea {
+  min-height: 150px;  /* Adjust the height of the message box */
+  resize: vertical;  /* Allow the user to resize the textarea vertically */
+}
+
+.contact-form button {
+  background: #789e9b;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 15px;
+  width: 100%;  /* Make the button full width */
+  margin-bottom: 30px;  /* Add space between the button and footer */
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 10px 0;
+  background: #444; /* Dark gray footer background */
+  color: white;
+}
